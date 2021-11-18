@@ -1,6 +1,3 @@
-let cp = document.querySelector('.editor-control-panel');
-cp.style.display = 'none';
-
 const csvPrices = {
     '1': '2 490',
     '3': '4 490',
