@@ -70,4 +70,4 @@ $e.placeholder = `${placeholder.email}`;
 $p.placeholder = `${placeholder.phone}`;
 
 $payButton = document.querySelector('.f-btn');
-$payButton.innerText = 'К оплате';
+$payButton.innerText = 'Оплатить';
