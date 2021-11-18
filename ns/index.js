@@ -1,7 +1,7 @@
 const url = window.location.href;
 
-let csv = url.match(/chatsovsemi-\d/);
-let ssp = url.match(/samsebeprebod-\d/);
+let csv = url.match(/chatsovsemi-\d+/);
+let ssp = url.match(/samsebeprepod-\d+/);
 
 function month(num) {
     if (num == 1) {
@@ -19,7 +19,7 @@ function month(num) {
 if (csv || ssp) {
     const $prod = document.querySelector('.prod');
     if (csv) {
-    	let num = csv[0].match(/\d/);
+    	let num = csv[0].match(/\d+/);
 		let end = month(num);
         $prod.innerHTML = `
             <p class="prod__title">Native Show</p>
@@ -28,7 +28,7 @@ if (csv || ssp) {
 		`;
     };
     if (ssp) {
-    	let num = ssp[0].match(/\d/);
+    	let num = ssp[0].match(/\d+/);
         let end = month(num);
         $prod.innerHTML = `
             <p class="prod__title">Native Show</p>
