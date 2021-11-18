@@ -1,12 +1,12 @@
 .lt-system-element {display: none !important;}
-/*27*/
-#liteBlock1222074504,/*60*/
-#liteBlock1222077763,/*15*/
-#liteBlock1222077813,/*10*/
-#liteBlock1222077822,/*5*/
-/*60*/
-#liteBlock1222077835,/*60*/
-#liteBlock1222073616,/*30*/
-#liteBlock1222077846,/*15*/
-#liteBlock1222077865,/*10*/
-#liteBlock1222077883,/*5*/ {display: none !important;}
+/*27 - 60 [60 - 5]*/
+#liteBlock1222074504,
+
+#liteBlock1222077763,
+#liteBlock1222077813,
+#liteBlock1222077822,
+#liteBlock1222077835,
+#liteBlock1222073616,
+#liteBlock1222077846,
+#liteBlock1222077865,
+#liteBlock1222077883 {display: none !important;}
