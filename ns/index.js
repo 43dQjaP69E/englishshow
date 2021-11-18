@@ -1,3 +1,17 @@
+const csvPrices = {
+    '1': '2 490',
+    '3': '4 490',
+    '6': '6 990',
+    '12': '9 990'
+};
+
+const sspPrices = {
+    '1': '1 490',
+    '3': '2 490',
+    '6': '4 490',
+    '12': '4 490'
+};
+
 const url = window.location.href;
 
 let csv = url.match(/chatsovsemi-\d+/);
@@ -5,7 +19,6 @@ let ssp = url.match(/samsebeprepod-\d+/);
 
 function month(num) {
     if (num == 1) {
-        console.log('месяц')
     	return '';
     }
     if (num == 3) {
@@ -18,6 +31,8 @@ function month(num) {
 
 if (csv || ssp) {
     const $prod = document.querySelector('.prod');
+    const $prodprice = document.querySelector('.prod__price');
+
     if (csv) {
     	let num = csv[0].match(/\d+/);
 		let end = month(num);
@@ -26,6 +41,7 @@ if (csv || ssp) {
             <p class="prod__type">#чатсовсеми</p>
 			<p class="prod__dur">${num} месяц${end}</p>
 		`;
+        $prodprice.innerHTML = `К оплате: ${csvPrices['num']}`;
     };
     if (ssp) {
     	let num = ssp[0].match(/\d+/);
@@ -35,6 +51,7 @@ if (csv || ssp) {
             <p class="prod__type">#самсебепрепод</p>
 			<p class="prod__dur">${num} месяц${end}</p>
 		`;
+        $prodprice.innerHTML = `К оплате: ${sspPrices['num']}`;
     };
 };
 
