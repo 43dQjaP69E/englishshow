@@ -1,7 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 body {
+    position: relative;
+    top: 0;
+    left: 0;
 	background: #f7f7f7;
+    width: 100%;
+    min-height: 100vh;
 }
 
 .logo {
