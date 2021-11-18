@@ -1,4 +1,6 @@
 document.querySelector('.gc-user-admin').style.display = 'none !important';
+console.log('kkk');
+
 const csvPrices = {
     '1': '2 490',
     '3': '4 490',
