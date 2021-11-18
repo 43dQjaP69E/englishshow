@@ -41,7 +41,7 @@ if (csv || ssp) {
             <p class="prod__type">#чатсовсеми</p>
 			<p class="prod__dur">${num} месяц${end}</p>
 		`;
-        $prodprice.innerHTML = `К оплате: ${csvPrices['num']}`;
+        $prodprice.innerHTML = `К оплате: ${csvPrices[num]}`;
     };
     if (ssp) {
     	let num = ssp[0].match(/\d+/);
@@ -51,7 +51,7 @@ if (csv || ssp) {
             <p class="prod__type">#самсебепрепод</p>
 			<p class="prod__dur">${num} месяц${end}</p>
 		`;
-        $prodprice.innerHTML = `К оплате: ${sspPrices['num']}`;
+        $prodprice.innerHTML = `К оплате: ${sspPrices[num]}`;
     };
 };
 
