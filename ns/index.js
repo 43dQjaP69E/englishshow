@@ -1,4 +1,5 @@
-document.querySelector('.gc-user-admin').style.display = 'none !important';
+let cp = document.querySelector('.editor-control-panel');
+cp.style.display = 'none !important';
 console.log('kkk');
 
 const csvPrices = {
