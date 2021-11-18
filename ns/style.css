@@ -4,9 +4,12 @@ body {
     position: relative;
     top: 0;
     left: 0;
-	background: #f7f7f7;
     width: 100%;
     min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f7f7f7;
 }
 
 .logo {
