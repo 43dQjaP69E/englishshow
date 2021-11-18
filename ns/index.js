@@ -1,7 +1,5 @@
 let cp = document.querySelector('.editor-control-panel');
 cp.style.display = 'none';
-let editItems = document.querySelectorAll('.lt-editing');
-edit.forEach((edit) => {edit.style.display = 'none'});
 
 const csvPrices = {
     '1': '2 490',
