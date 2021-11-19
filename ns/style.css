@@ -46,6 +46,15 @@ body {
     text-align: center;
 }
 
+.prod__price .common {
+    font-size: 18px;
+    text-decoration: line-through;
+}
+
+.prod__price .sale {
+    color: #3840a3;
+}
+
 .field-content .f-input {
     font-family: 'Open Sans', sans-serif; 
     font-size: 18px; 
