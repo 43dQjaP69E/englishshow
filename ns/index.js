@@ -39,8 +39,12 @@ if (csv || ssp) {
         $prod.innerHTML = `
             <p class="prod__title">Native Show</p>
             <p class="prod__type">#чатсовсеми</p>
-			<p class="prod__dur">${num} месяц${end}</p>
+		<p class="prod__dur">${num} месяц${end}</p>
 		`;
+	    
+	let currPrice = csvPrices[num];
+        console.log(+currPrice)
+
         $prodprice.innerHTML = `К оплате: ${csvPrices[num]}`;
     };
     if (ssp) {
