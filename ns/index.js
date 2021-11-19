@@ -42,15 +42,15 @@ if (csv || ssp) {
 		<p class="prod__dur">${num} месяц${end}</p>
 		`;
 	    
-	let salePrice = getSalePrice(csvPrices[num], 40);
+	//let salePrice = getSalePrice(csvPrices[num], 40);
 	  
-	if (salePrice) {
+	/*if (salePrice) {
 	    $prodprice.innerHTML = `К оплате: <span class='common'>${sspPrices[num]}</span> <span class='sale'>${salePrice}</span>`;
 	} else {
 	    $prodprice.innerHTML = `К оплате: ${sspPrices[num]}`;
-	};
+	};*/
 	    
-        //$prodprice.innerHTML = `К оплате: ${csvPrices[num]} ${salePrice}`;
+        $prodprice.innerHTML = `К оплате: ${csvPrices[num]}`;
     };
     if (ssp) {
     	let num = ssp[0].match(/\d+/);
