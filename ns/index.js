@@ -43,7 +43,9 @@ if (csv || ssp) {
 		`;
 	    
 	let currPrice = csvPrices[num];
-        console.log(currPrice)
+
+	    currPrice = currPrice.split(' ').join('');
+	    console.log(currPrice)
 
         $prodprice.innerHTML = `К оплате: ${csvPrices[num]}`;
     };
