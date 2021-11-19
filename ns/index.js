@@ -57,12 +57,13 @@ if (csv || ssp) {
     };
 };
 
-function getSalePrice(currPrice, sale) {
-	currPrice = currPrice.split(' ').join('');
-    let salePrice = +currPrice - (+currPrice * sale / 100);
-    let s = String(salePrice).split('');
-    salePrice = `${s[0]} ${s[1]}${s[2]}${s[3]}`;
-    return salePrice;
+function getSalePrice(c, sale) {
+    //c - current price, s - sale price
+	let c = c.split(' ').join('');
+    let s = +c - (+c * sale / 100);
+    let s = String(s).split('');
+    s = `${s[0]} ${s[1]}${s[2]}${s[3]}`;
+    return s;
 };
 
 const placeholder = {
