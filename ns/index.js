@@ -42,13 +42,8 @@ if (csv || ssp) {
 		<p class="prod__dur">${num} месяц${end}</p>
 		`;
 	    
-	let currPrice = csvPrices[num];
-
-	    currPrice = currPrice.split(' ').join('');
-	    let salePrice = +currPrice - (+currPrice * 40 / 100);
-	    console.log(currPrice, salePrice);
-
-        $prodprice.innerHTML = `К оплате: ${csvPrices[num]}`;
+	let salePrice = getSalePrice(csvPrices[num], 40);
+        $prodprice.innerHTML = `К оплате: ${csvPrices[num]} ${salePrice}`;
     };
     if (ssp) {
     	let num = ssp[0].match(/\d+/);
@@ -60,6 +55,14 @@ if (csv || ssp) {
 		`;
         $prodprice.innerHTML = `К оплате: ${sspPrices[num]}`;
     };
+};
+
+function getSalePrice(currPrice, sale) {
+	currPrice = currPrice.split(' ').join('');
+    let salePrice = +currPrice - (+currPrice * sale / 100);
+    let s = String(salePrice).split('');
+    salePrice = `${s[0]} ${s[1]}${s[2]}${s[3]}`;
+    return salePrice;
 };
 
 const placeholder = {
