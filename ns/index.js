@@ -45,7 +45,8 @@ if (csv || ssp) {
 	let currPrice = csvPrices[num];
 
 	    currPrice = currPrice.split(' ').join('');
-	    console.log(+currPrice, typeof currPrice)
+	    let salePrice = +currPrice - (+currPrice * 40 / 100);
+	    console.log(currPrice, salePrice);
 
         $prodprice.innerHTML = `К оплате: ${csvPrices[num]}`;
     };
