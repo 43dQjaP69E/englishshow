@@ -64,9 +64,9 @@ if (csv || ssp) {
     };
 };
 
-function getSalePrice(c, sale) {
+function getSalePrice(price, sale) {
     //c - current price, s - sale price
-	let c = c.split(' ').join('');
+	let c = price.split(' ').join('');
     let s = +c - (+c * sale / 100);
     let s = String(s).split('');
     s = `${s[0]} ${s[1]}${s[2]}${s[3]}`;
