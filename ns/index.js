@@ -45,7 +45,7 @@ if (csv || ssp) {
 	let salePrice = getSalePrice(csvPrices[num], 40);
 	  
 	if (salePrice) {
-	    $prodprice.innerHTML = `К оплате: <span class='common'>${sspPrices[num]}</span> <span class='sale'></span>`;
+	    $prodprice.innerHTML = `К оплате: <span class='common'>${sspPrices[num]}</span> <span class='sale'>${salePrice}</span>`;
 	} else {
 	    $prodprice.innerHTML = `К оплате: ${sspPrices[num]}`;
 	};
