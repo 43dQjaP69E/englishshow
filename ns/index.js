@@ -42,7 +42,7 @@ if (csv || ssp) {
 		<p class="prod__dur">${num} месяц${end}</p>
 		`;
 	    
-	let salePrice = getSalePrice(csvPrices[num], 40);
+	//let salePrice = getSalePrice(csvPrices[num], 40);
 	  
 	if (salePrice) {
 	    $prodprice.innerHTML = `К оплате: <span class='common'>${csvPrices[num]}</span> <span class='sale'>${salePrice}</span>`;
