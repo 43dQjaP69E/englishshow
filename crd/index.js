@@ -7,8 +7,7 @@ if (t) {
     $prnt.parentNode.removeChild($prnt);
     
     const $add = document.querySelector('.lite-page-footer-add-block');
-    $prnt = $add.parentNode;
-    console.log($prnt)
+    console.log($add)
 }
 
 
