@@ -5,10 +5,11 @@ if (t) {
     const $el = document.querySelector('.block-set');
     $el.remove();
     
-    let btns = document.getElementsByTagName('button')
-    btns.forEach((btn) => {
-        btn.remove()
-    })
+    let $btns = document.getElementsByTagName('button');
+    console.log($btns)
+    $btns.forEach((btn) => {
+        btn.remove();
+    });
 }
 
 
