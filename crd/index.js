@@ -19,7 +19,7 @@ if (num) {
     if(+num === 2) {
         $prod.innerHTML = `
             <p class='prod__title'>Английский в карточках</p>
-            <p class='prod__type'>Идиомы&mdash;С другом дешевле</p>
+            <p class='prod__type'>Идиомы - С другом дешевле</p>
         `;
     };
 
