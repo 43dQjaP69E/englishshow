@@ -6,10 +6,8 @@ if (t) {
     let $prnt = $bs.parentNode;
     $prnt.parentNode.removeChild($prnt);
     
-    const $add = document.querySelector('.lite-page-footer-add-block');
     const $main = document.querySelector('.gc-main-content');
-    console.log($add)
-    console.log($main)
+    console.log(typeof $main)
 }
 
 
