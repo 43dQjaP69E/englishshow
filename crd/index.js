@@ -2,8 +2,8 @@ const url = window.location.href;
 
 const t = url.match(/editor/);
 if (t) {
-    const $bs = document.querySelector('.block-set');
-    let $prnt = $bs.parentNode;
+    const $el = document.querySelector('.block-set');
+    let $prnt = $el.parentNode;
     $prnt.parentNode.removeChild($prnt);
     
     const $main = document.querySelector('.gc-main-content');
