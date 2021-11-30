@@ -8,7 +8,7 @@ if (t) {
     let $btns = document.getElementsByTagName('button');
     console.log($btns)
     for (let i = 0; i < $btns.length; i++) {
-        $btns[i].remove
+        $btns[i].remove();
     };
 };
 
