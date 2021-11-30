@@ -5,8 +5,10 @@ if (t) {
     const $el = document.querySelector('.block-set');
     $el.remove();
     
-    const $main = document.querySelector('.gc-main-content');
-    $main.children[4].remove();
+    let btns = document.getElementsByTagName('button')
+    btns.forEach((btn) => {
+        btn.remove()
+    })
 }
 
 
