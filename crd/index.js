@@ -8,7 +8,7 @@ const $prod = document.querySelector('.prod');
 const $prodprice = document.querySelector('.prod__price');
 
 if (num) {
-    console.log('проверка нум')
+    console.log(`${num}`, typeof num)
     if (num === 1) {
         $prod.innerHTML = `
             <p class='prod__title'>Английский в карточках</p>
@@ -25,7 +25,7 @@ if (num) {
 
     $prodprice.innerHTML = `К оплате: ${cards$[num]}`
 };
-console.loh('ниже проверки')
+
 const placeholder = {
     name: 'Имя',
     email: 'Email',
