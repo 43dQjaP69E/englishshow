@@ -1,10 +1,9 @@
 const url = window.location.href;
-const typePage = url.match(/editor/);
-console.log(typePage)
-if (typePage) {
+
+const t = url.match(/editor/);
+if (t) {
     let $bs = document.querySelector('.block-set');
-    let $prnt = $bs.parentNode
-    console.log($prnt)
+    $bs.parentNode.removeChild($bs);
 }
 
 
