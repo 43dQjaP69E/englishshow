@@ -3,11 +3,12 @@ const url = window.location.href;
 const t = url.match(/editor/);
 if (t) {
     const $bs = document.querySelector('.block-set');
-    const $prnt = $bs.parentNode;
+    let $prnt = $bs.parentNode;
     $prnt.parentNode.removeChild($prnt);
     
-    const $controls = document.querySelector('.lite-page-footer-add-block');
-    $controls.parentNode.removeChild($controls); 
+    const $add = document.querySelector('.lite-page-footer-add-block');
+    $prnt = $add.parentNode;
+    console.log($prnt)
 }
 
 
