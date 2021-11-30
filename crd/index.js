@@ -8,6 +8,7 @@ const $prod = document.querySelector('.prod');
 const $prodprice = document.querySelector('.prod__price');
 
 if (num) {
+    console.log('проверка нум')
     if (num === 1) {
         $prod.innerHTML = `
             <p class='prod__title'>Английский в карточках</p>
