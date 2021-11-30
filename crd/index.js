@@ -7,10 +7,10 @@ if (t) {
     
     let $btns = document.getElementsByTagName('button');
     console.log($btns)
-    $btns.forEach((btn) => {
-        btn.remove();
-    });
-}
+    for (let i = 0; i < $btns.length; i++) {
+        $btns[i].remove
+    };
+};
 
 
 const cards$ = {
