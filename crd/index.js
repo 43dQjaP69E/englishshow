@@ -2,7 +2,7 @@ const url = window.location.href;
 const typePage = url.match(/editor/);
 console.log(typePage)
 if (typePage) {
-    let $bs = document.querySelector('block-set');
+    let $bs = document.querySelector('.block-set');
     let $prnt = $bs.parentNode
     console.log($prnt)
 }
