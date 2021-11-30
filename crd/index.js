@@ -3,10 +3,10 @@ const url = window.location.href;
 const t = url.match(/editor/);
 if (t) {
     const $el = document.querySelector('.block-set');
-    let $prnt = $el.parentNode;
-    $prnt.parentNode.removeChild($prnt);
+    $el.remove();
     
     const $main = document.querySelector('.gc-main-content');
+    console.log($main)
     console.log(typeof $main)
 }
 
