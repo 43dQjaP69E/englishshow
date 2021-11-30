@@ -25,7 +25,7 @@ if (num) {
 
     $prodprice.innerHTML = `К оплате: ${cards$[num]}`
 };
-
+console.loh('ниже проверки')
 const placeholder = {
     name: 'Имя',
     email: 'Email',
