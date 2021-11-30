@@ -9,21 +9,21 @@ const $prodprice = document.querySelector('.prod__price');
 
 if (num) {
     console.log(`${num}`, typeof num)
-    if (num === 1) {
+    if (+num === 1) {
         $prod.innerHTML = `
             <p class='prod__title'>Английский в карточках</p>
             <p class='prod__type'>Идиомы</p>
         `;
     };
 
-    if(num === 2) {
+    if(+num === 2) {
         $prod.innerHTML = `
             <p class='prod__title'>Английский в карточках</p>
             <p class='prod__type'>Идиомы&mdash;С другом дешевле</p>
         `;
     };
 
-    $prodprice.innerHTML = `К оплате: ${cards$[num]}`
+    $prodprice.innerHTML = `К оплате: ${cards$[+num]}`
 };
 
 const placeholder = {
