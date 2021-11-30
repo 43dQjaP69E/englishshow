@@ -6,8 +6,7 @@ if (t) {
     $el.remove();
     
     const $main = document.querySelector('.gc-main-content');
-    console.log($main.children)
-    console.log(typeof $main)
+    $main.children[4].remove();
 }
 
 
