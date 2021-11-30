@@ -1,6 +1,11 @@
 const url = window.location.href;
 const typePage = url.match(/editor/);
 console.log(typePage)
+if (typePage) {
+    let blockset = document.querySelector('block-set');
+    blockset.parentNode.removeChild(blockset)
+}
+
 
 const cards$ = {
     '1': '2 490',
