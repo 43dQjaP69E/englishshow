@@ -1,14 +1,16 @@
+const url = window.location.href;
+const typePage = url.match(/editor/);
+console.log(typePage)
+
 const cards$ = {
     '1': '2 490',
     '2': '4 200'
 };
-const url = window.location.href;
 const num = url.match(/\d/);
 const $prod = document.querySelector('.prod');
 const $prodprice = document.querySelector('.prod__price');
 
 if (num) {
-    console.log(`${num}`, typeof num)
     if (+num === 1) {
         $prod.innerHTML = `
             <p class='prod__title'>Английский в карточках</p>
