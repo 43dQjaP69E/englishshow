@@ -2,8 +2,13 @@ const url = window.location.href;
 
 const t = url.match(/editor/);
 if (t) {
-    let $bs = document.querySelector('.block-set');
+    const $bs = document.querySelector('.block-set');
+    const $prnt = $bs.parentNode;
     $bs.parentNode.removeChild($bs);
+    const $controls = document.querySelector('.lite-page-footer-add-block');
+    $controls.parentNode.removeChild($controls)
+    $prnt.parentNode.removeChild($prnt)
+    
 }
 
 
