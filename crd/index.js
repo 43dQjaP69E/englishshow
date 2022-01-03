@@ -10,6 +10,7 @@ if (t) {
     for (let i = 0; i < $btns.length; i++) {
         $btns[i].remove();
     };*/
+    console.log('Удаление');
     const $el = document.querySelector('.gc-main-content');
     $el.remove();
 };
