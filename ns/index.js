@@ -57,6 +57,7 @@ if (csv || ssp) {
         $prodprice.innerHTML = `К оплате: ${sspPrices[num]}`;
     };
 } else {
+	document.title = 'Native Show / #навсегда';
 	$prod.innerHTML = `
             <p class="prod__title">Native Show</p>
             <p class="prod__type">#навсегда</p>
