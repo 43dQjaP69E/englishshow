@@ -1,4 +1,4 @@
-let email = document.querySelector('.kk-email');
+/*let email = document.querySelector('.kk-email');
 let emailLabel = document.createElement('label');
 emailLabel.textContent = 'email';
 email.prepend(emailLabel);
@@ -11,4 +11,4 @@ phone.prepend(phoneLabel);
 let name = document.querySelector('.kk-name');
 let nameLabel = document.createElement('label');
 nameLabel.textContent = 'ваше имя';
-name.prepend(nameLabel);
+name.prepend(nameLabel);*/
