@@ -61,7 +61,7 @@ if (csv || ssp) {
             <p class="prod__title">Native Show</p>
             <p class="prod__type">#навсегда</p>
 	`;
-        $prodprice.innerHTML = `К оплате: 9990`;
+        $prodprice.innerHTML = `К оплате: 9 990`;
 };
 
 function getSalePrice(price, sale) {
