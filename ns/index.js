@@ -29,13 +29,13 @@ function month(num) {
     };
 };
 
-if (csv || ssp) {
-    const $prod = document.querySelector('.prod');
-    const $prodprice = document.querySelector('.prod__price');
+const $prod = document.querySelector('.prod');
+const $prodprice = document.querySelector('.prod__price');
 
+if (csv || ssp) {
     if (csv) {
     	let num = csv[0].match(/\d+/);
-		let end = month(num);
+	let end = month(num);
         $prod.innerHTML = `
             <p class="prod__title">Native Show</p>
             <p class="prod__type">#чатсовсеми</p>
@@ -56,6 +56,12 @@ if (csv || ssp) {
 		`;
         $prodprice.innerHTML = `К оплате: ${sspPrices[num]}`;
     };
+} else {
+	$prod.innerHTML = `
+            <p class="prod__title">Native Show</p>
+            <p class="prod__type">#навсегда</p>
+	`;
+        $prodprice.innerHTML = `К оплате: 9990`;
 };
 
 function getSalePrice(price, sale) {
