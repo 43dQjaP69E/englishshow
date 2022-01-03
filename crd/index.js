@@ -2,14 +2,16 @@ const url = window.location.href;
 
 const t = url.match(/editor/);
 if (t) {
-    const $el = document.querySelector('.block-set');
+    /*const $el = document.querySelector('.block-set');
     $el.remove();
     
     let $btns = document.getElementsByTagName('button');
     console.log($btns)
     for (let i = 0; i < $btns.length; i++) {
         $btns[i].remove();
-    };
+    };*/
+    const $el = document.querySelector('.gc-main-content');
+    $el.remove();
 };
 
 
