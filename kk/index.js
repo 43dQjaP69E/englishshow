@@ -1,3 +1,5 @@
+document.getElementsByTagName('body')[0].remove();
+
 /*const kk27 = {
     '5': '3 000',
     '10': '5 750',
