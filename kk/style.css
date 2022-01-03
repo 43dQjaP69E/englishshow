@@ -1,4 +1,4 @@
-/*@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Serif&display=swap');
 .cover-filter {
 	background-image: url(https://kodkodych.ru/img/kk-bg.jpg) !important;
     background-size: 40%;
@@ -133,4 +133,4 @@
     .form-elem label {font-size: 18px;}
 	.form-elem input {width: 100%;}
     .prod__price {font-size: 24px;}
-}*/
+}
