@@ -3,7 +3,7 @@ const url = window.location.href;
 const t = url.match(/editor/);
 if (t) {
     console.log('fatality');
-    document.getElementsByTagName('body')[0].remove();
+    //document.getElementsByTagName('body')[0].remove();
 };
 
 
