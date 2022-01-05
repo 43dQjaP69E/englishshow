@@ -57,6 +57,12 @@ if (csv || ssp) {
         $prodprice.innerHTML = `К оплате: ${sspPrices[num]}`;
     };
 } else {
+	const $formContent = document.querySelector('.form-content');
+	const $builder = $formContent.querySelector('.builder');
+	const $btn = $builder.querySelector('.f-btn');
+	console.log($builder);
+	console.log($btn);
+	
 	document.title = 'Native Show / #навсегда';
 	$prod.innerHTML = `
             <p class="prod__title">Native Show</p>
