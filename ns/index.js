@@ -67,7 +67,7 @@ if (csv || ssp) {
 	console.log($builder);
 	console.log($btn);
 	
-	const $btnParent = $btn.parendNode;
+	const $btnParent = $btn.parentElement;
 	console.log($btnParent);
 	$btnParent.insertAdjacentHTML('beforebegin', $item);
 	
