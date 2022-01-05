@@ -68,7 +68,8 @@ if (csv || ssp) {
 	console.log($btn);
 	
 	const $btnParent = $btn.parendNode;
-	$builder.insertAdjacentHTML('beforebegin', $btnParent);
+	console.log($btnParent);
+	//$builder.insertAdjacentHTML('beforebegin', $btnParent);
 	
 	document.title = 'Native Show / #навсегда';
 	$prod.innerHTML = `
