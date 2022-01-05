@@ -1,4 +1,4 @@
-/*const csvPrices = {
+const csvPrices = {
     '1': '2 490',
     '3': '4 490',
     '6': '6 990',
@@ -97,4 +97,4 @@ $e.placeholder = `${placeholder.email}`;
 $p.placeholder = `${placeholder.phone}`;
 
 $payButton = document.querySelector('.f-btn');
-$payButton.innerText = 'Оплатить';*/
+$payButton.innerText = 'Оплатить';
