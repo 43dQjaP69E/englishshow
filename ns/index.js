@@ -30,7 +30,8 @@ function month(num) {
 };
 
 const $prod = document.querySelector('.prod');
-const $prodprice = document.querySelector('.prod__price');
+//const $prodprice = document.querySelector('.prod__price');
+const $btn = document.querySelector('.form-content .builder .f-btn').parentElement;
 
 if (csv || ssp) {
     if (csv) {
@@ -44,7 +45,9 @@ if (csv || ssp) {
 	    
 	//let salePrice = getSalePrice(csvPrices[num], 40);
 	//$prodprice.innerHTML = `К оплате: <span class='common'>${csvPrices[num]}</span> <span class='sale'>${salePrice}</span>`;
-	$prodprice.innerHTML = `К оплате: ${csvPrices[num]}`;
+	    
+	//$prodprice.innerHTML = `К оплате: ${csvPrices[num]}`;
+	$btn.insertAdjacentHTML('beforebegin', `<div class='prod__price'>К оплате: ${csvPrices[num]}</div>`);
     };
     if (ssp) {
     	let num = ssp[0].match(/\d+/);
@@ -54,10 +57,10 @@ if (csv || ssp) {
             <p class="prod__type">#самсебепрепод</p>
 			<p class="prod__dur">${num} месяц${end}</p>
 		`;
-        $prodprice.innerHTML = `К оплате: ${sspPrices[num]}`;
+        //$prodprice.innerHTML = `К оплате: ${sspPrices[num]}`;
+	$btn.insertAdjacentHTML('beforebegin', `<div class='prod__price'>К оплате: ${sspPrices[num]}</div>`);
     };
 } else {
-	const $btn = document.querySelector('.form-content .builder .f-btn').parentNode;
 	$btn.insertAdjacentHTML('beforebegin', `<div class='prod__price'>К оплате: 9 990&#x20bd;</div>`);
 	
 	document.title = 'Native Show / #навсегда';
