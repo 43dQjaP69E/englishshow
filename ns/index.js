@@ -69,7 +69,7 @@ if (csv || ssp) {
 	
 	const $btnParent = $btn.parentElement;
 	console.log($btnParent);
-	$btnParent.insertAdjacentHTML('beforebegin', '<div class='prod'>kek</div>');
+	$btnParent.insertAdjacentHTML('beforebegin', `<div class='prod'>kek</div>`);
 	
 	document.title = 'Native Show / #навсегда';
 	$prod.innerHTML = `
