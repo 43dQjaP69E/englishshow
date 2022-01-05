@@ -57,9 +57,9 @@ if (csv || ssp) {
         $prodprice.innerHTML = `К оплате: ${sspPrices[num]}`;
     };
 } else {
-	const $item = document.createElement('div');
+	/*const $item = document.createElement('div');
 	$item.classList.add('prod')
-	$item.innerHTML = `kek`;
+	$item.innerHTML = `kek`;*/
 	
 	const $formContent = document.querySelector('.form-content');
 	const $builder = $formContent.querySelector('.builder');
@@ -69,7 +69,7 @@ if (csv || ssp) {
 	
 	const $btnParent = $btn.parentElement;
 	console.log($btnParent);
-	$btnParent.insertAdjacentHTML('beforebegin', $item);
+	$btnParent.insertAdjacentHTML('beforebegin', '<div class='prod'>kek</div>');
 	
 	document.title = 'Native Show / #навсегда';
 	$prod.innerHTML = `
