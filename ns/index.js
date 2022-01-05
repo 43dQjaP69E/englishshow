@@ -47,7 +47,7 @@ if (csv || ssp) {
 	//$prodprice.innerHTML = `К оплате: <span class='common'>${csvPrices[num]}</span> <span class='sale'>${salePrice}</span>`;
 	    
 	//$prodprice.innerHTML = `К оплате: ${csvPrices[num]}`;
-	$btn.insertAdjacentHTML('beforebegin', `<div class='prod__price'>К оплате: ${csvPrices[num]}</div>`);
+	$btn.insertAdjacentHTML('beforebegin', `<div class='prod__price'>К оплате: ${csvPrices[num]}&#x20bd;</div>`);
     };
     if (ssp) {
     	let num = ssp[0].match(/\d+/);
@@ -58,7 +58,7 @@ if (csv || ssp) {
 			<p class="prod__dur">${num} месяц${end}</p>
 		`;
         //$prodprice.innerHTML = `К оплате: ${sspPrices[num]}`;
-	$btn.insertAdjacentHTML('beforebegin', `<div class='prod__price'>К оплате: ${sspPrices[num]}</div>`);
+	$btn.insertAdjacentHTML('beforebegin', `<div class='prod__price'>К оплате: ${sspPrices[num]}&#x20bd;</div>`);
     };
 } else {
 	$btn.insertAdjacentHTML('beforebegin', `<div class='prod__price'>К оплате: 9 990&#x20bd;</div>`);
