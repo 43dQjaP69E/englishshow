@@ -50,3 +50,8 @@ $e.placeholder = `${ph.email}`;
 $p.placeholder = `${ph.phone}`;
 $payButton = document.querySelector('.f-btn');
 $payButton.innerText = 'Оплатить';
+
+let $body = document.getElementsByTagName('body')[0];
+let $logo = document.createElement('div');
+$logo.classList.add('logo');
+$body.append($logo);
