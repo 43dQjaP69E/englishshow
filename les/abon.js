@@ -1,7 +1,7 @@
 const url = window.location.href;
-console.log(`yahoo \n url = ${url}`);
+console.log(`yahoo\nurl = ${url}`);
 
-if(url.includes('editor')) {
+if(url.includes('englishshow')) {
     console.log('fatality')
     const $gc = document.querySelector('.gc-main-content');
     $gc.innerHTML = ``;
