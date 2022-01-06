@@ -38,3 +38,13 @@ function month(val) {
     if (val == 3) {return 'a';};
     if (val >= 6) {return 'ев';};
 };
+
+const ph = {name:'Имя', email:'Email', phone:'Телефон'};
+const $n = document.getElementsByName('formParams[full_name]')[0];
+const $e = document.getElementsByName('formParams[email]')[0];
+const $p = document.getElementsByName('formParams[phone]')[0];
+$n.placeholder = `${ph.name}`;
+$e.placeholder = `${ph.email}`;
+$p.placeholder = `${ph.phone}`;
+$payButton = document.querySelector('.f-btn');
+$payButton.innerText = 'Оплатить';
