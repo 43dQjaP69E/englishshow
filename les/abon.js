@@ -1,3 +1,11 @@
+const url = window.location.href;
+
+if(url.includes('editor')) {
+    const $gc = document.querySelector('.gc-main-content');
+    $gc.innerHTML = ``;
+};
+
+
 const p = { //price
     '1': {
         '45': ['3 200', '6 560', '9480', '12 320'],
@@ -16,7 +24,6 @@ const p = { //price
     }
 };
 
-const url = window.location.href;
 const re = url.match(/\dm-\d+-\d/g);
 const v = String(re).split('-');
 
