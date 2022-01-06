@@ -31,7 +31,7 @@ let end = month(num);
 const $builder = document.querySelector('.form-content .builder');
 $builder.insertAdjacentHTML('afterbegin', `<div class='prod'><p>Абонемент на ${num} месяц${end}</p><p>${num*4*w} уроков по ${m} минут</p></div>`);
 const $btn = document.querySelector('.form-content .builder .f-btn').parentElement;
-$btn.insertAdjacentHTML('beforebegin', `<div class='prod__price'>К оплате: ${p[+num][+m][+d-1]}&#x20bd;</div>`);
+$btn.insertAdjacentHTML('beforebegin', `<div class='prod__price'>К оплате: ${p[num][m][d-1]}&#x20bd;</div>`);
 
 function month(val) {
     if (val == 1) {return '';};
