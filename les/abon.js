@@ -1,4 +1,5 @@
 const url = window.location.href;
+console.log(`yahoo \n url = ${url}`);
 
 if(url.includes('editor')) {
     console.log('fatality')
