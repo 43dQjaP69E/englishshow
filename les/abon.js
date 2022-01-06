@@ -1,4 +1,4 @@
-const p = { //price
+/*const p = { //price
     '1': {
         '45': ['3 200', '6 560', '9480', '12 320'],
         '60': ['3 760', '7 360', '10 680', '13 920'],
@@ -48,3 +48,4 @@ $e.placeholder = `${ph.email}`;
 $p.placeholder = `${ph.phone}`;
 $payButton = document.querySelector('.f-btn');
 $payButton.innerText = 'Оплатить';
+*/
