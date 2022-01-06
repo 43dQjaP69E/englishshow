@@ -1,6 +1,7 @@
 const url = window.location.href;
 
 if(url.includes('editor')) {
+    console.log('fatality')
     const $gc = document.querySelector('.gc-main-content');
     $gc.innerHTML = ``;
 };
