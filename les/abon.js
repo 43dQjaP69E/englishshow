@@ -1,12 +1,4 @@
 const url = window.location.href;
-console.log(`yahoo\nurl = ${url}`);
-
-if(url.includes('englishshow')) {
-    console.log('fatality')
-    const $gc = document.querySelector('.gc-main-content');
-    $gc.innerHTML = ``;
-};
-
 
 const p = { //price
     '1': {
