@@ -1,3 +1,4 @@
+document.title = 'Уроки с преподавателем';
 const url = window.location.href;
 
 const p = { //price
