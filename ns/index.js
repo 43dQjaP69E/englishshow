@@ -1,15 +1,15 @@
 const csvPrices = {
-    '1': '2 490',
-    '3': '4 490',
-    '6': '6 990',
-    '12': '9 990'
+    '1': '2490',
+    '3': '4490',
+    '6': '6990',
+    '12': '9990'
 };
 
 const sspPrices = {
-    '1': '1 490',
-    '3': '2 490',
-    '6': '4 490',
-    '12': '4 490'
+    '1': '1490',
+    '3': '2490',
+    '6': '4490',
+    '12': '4490'
 };
 
 const url = window.location.href;
@@ -47,7 +47,7 @@ if (csv || ssp) {
 	//$prodprice.innerHTML = `К оплате: <span class='common'>${csvPrices[num]}</span> <span class='sale'>${salePrice}</span>`;
 	    
 	//$prodprice.innerHTML = `К оплате: ${csvPrices[num]}`;
-	$btn.insertAdjacentHTML('beforebegin', `<div class='prod__price'>К оплате: ${csvPrices[num]}&#x20bd;</div>`);
+	$btn.insertAdjacentHTML('beforebegin', `<div class='prod__price'>К оплате: ${csvPrices[num]} &#x20bd;</div>`);
     };
     if (ssp) {
     	let num = ssp[0].match(/\d+/);
@@ -58,10 +58,10 @@ if (csv || ssp) {
 			<p class="prod__dur">${num} месяц${end}</p>
 		`;
         //$prodprice.innerHTML = `К оплате: ${sspPrices[num]}`;
-	$btn.insertAdjacentHTML('beforebegin', `<div class='prod__price'>К оплате: ${sspPrices[num]}&#x20bd;</div>`);
+	$btn.insertAdjacentHTML('beforebegin', `<div class='prod__price'>К оплате: ${sspPrices[num]} &#x20bd;</div>`);
     };
 } else {
-	$btn.insertAdjacentHTML('beforebegin', `<div class='prod__price'>К оплате: 9 990&#x20bd;</div>`);
+	$btn.insertAdjacentHTML('beforebegin', `<div class='prod__price'>К оплате: 9990 &#x20bd;</div>`);
 	
 	document.title = 'Native Show / #навсегда';
 	$prod.innerHTML = `
