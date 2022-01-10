@@ -1,0 +1,205 @@
+.hero {
+    position: relative;
+    height: 530px;
+    background-image: url(/korporativnyj-anglijskij/hero.png);
+    background-position: center right;
+    background-repeat: no-repeat;
+    padding: 48px 0;
+}
+
+.hero::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 530px;
+    background: linear-gradient(273.01deg, rgba(255, 255, 255, 0) 22.15%, #feca55 55.36%);
+}
+
+.btn-appl {
+    background: #000;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 16px 24px;
+    border: none;
+    border-radius: 100px;
+}
+
+.hero .container {
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 5;
+}
+
+.hero h1{
+    font-size: 4em;
+}
+
+.hero h2 {
+    font-size: 1.75em;
+    font-weight: 400;
+}
+
+.native-show {
+    padding: 64px 0;
+    background: #e5e5e5;
+}
+
+.native-show-elem {
+    position: relative;
+    background: #d96663;
+    padding: 50px 110px;
+    margin: 0 2%;
+    border-radius: 30px;
+    color: #f2f2f2;
+}
+
+.ns-present {
+    position: absolute;
+    top: -110px;
+    right: 0;
+    width: 500px;
+}
+
+.native-show-title {
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.native-show-text {
+    font-size: 28px;
+}
+
+.reason {
+    padding: 80px 0;
+}
+
+.reason h2 {
+    font-size: 3.5em;
+    margin-bottom: 1.5em;
+}
+
+.reason-item {
+    margin-bottom: 5em;
+}
+
+.reason-num {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: #000;
+    border-radius: 50%;
+    font-size: 2em;
+    font-weight: 600;
+    line-height: 1;
+    color: #fff;
+}
+
+.reason-text {
+    font-size: 1.75em;
+}
+
+.goal {
+    background: linear-gradient(89.86deg, #FCCD03 60.26%, #FCCD03 117.55%);
+    padding: 40px 0;
+}
+
+.goal h2 {
+    font-size: 54px;
+    margin-bottom: 48px;
+}
+
+.goal ol {
+    font-size: 28px;
+}
+
+.help {
+    padding: 90px 48px;
+}
+
+.help h2 {
+    font-size: 3.5em;
+    margin-bottom: 1.5em;
+}
+
+.help-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.help-item img {
+    height: 170px;
+}
+
+.help-item p {
+    font-size: 1.75em;
+    text-align: center;
+    width: 75%;
+}
+
+.about {
+    background: #e5e5e5;
+    padding: 64px 0;
+}
+
+.about h2 {
+    font-size: 54px;
+    margin-bottom: 24px;
+}
+
+.yt-image {
+    max-width: 320px;
+}
+
+.about ul {
+    font-size: 28px;
+    margin-bottom: 48px;
+}
+
+.teachers {
+    position: relative;
+    height: 560px;
+    background-image: url(/korporativnyj-anglijskij/teachers.png);
+    background-position: center right;
+    background-repeat: no-repeat;
+    padding: 50px 0;
+}
+
+.teachers::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 560px;
+    background: linear-gradient(92.1deg, #FDCE04 50.26%, rgba(255, 255, 255, 0) 119.37%);
+}
+
+.teachers .container {
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 5;
+}
+
+.teachers h2 {
+    font-size: 54px;
+    margin-bottom: 32px;
+}
+
+.teachers p {
+    width: 65%;
+    font-size: 28px;
+    margin-bottom: 56px;
+}
