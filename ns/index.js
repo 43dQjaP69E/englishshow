@@ -1,8 +1,8 @@
 const csvPrices = {
-    '1': '2490',
-    '3': '4490',
-    '6': '6990',
-    '12': '9990'
+    '1': '3900',
+    '3': '6900',
+    '6': '10900',
+    '12': '14900'
 };
 
 const sspPrices = {
@@ -61,7 +61,7 @@ if (csv || ssp) {
 	$btn.insertAdjacentHTML('beforebegin', `<div class='prod__price'>К оплате: ${sspPrices[num]} &#x20bd;</div>`);
     };
 } else {
-	$btn.insertAdjacentHTML('beforebegin', `<div class='prod__price'>К оплате: 9990 &#x20bd;</div>`);
+	$btn.insertAdjacentHTML('beforebegin', `<div class='prod__price'>К оплате: 14900 &#x20bd;</div>`);
 	
 	document.title = 'Native Show / #навсегда';
 	$prod.innerHTML = `
