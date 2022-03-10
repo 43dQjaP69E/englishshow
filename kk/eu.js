@@ -26,12 +26,12 @@ if (items.length > 0) {
 
     if(+items[1] === 27) {
         $prod.innerHTML = `<span>{ КодКодыч</span><span>27 минут</span><span>${items[2]} уроков }</span>`;
-        $prodprice.innerText = `К оплате: ${kk27[items[2]]}`;
+        $prodprice.innerText = `К оплате: ${kk27[items[2]]}€`;
     };
 
     if(+items[1] === 55) {
         $prod.innerHTML = `<span>{ КодКодыч</span><span>55 минут</span><span>${items[2]} уроков }</span>`;
-        $prodprice.innerText = `К оплате: ${kk55[items[2]]}`;
+        $prodprice.innerText = `К оплате: ${kk55[items[2]]}€`;
     };
 };
 
