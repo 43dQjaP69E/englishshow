@@ -1,3 +1,8 @@
+let ns = localStorage.getItem('nativeShow');
+if(!ns) {
+  localStorage.setItem('nativeShow', true);
+};
+
 const csvPrices = {
     '1': '3900',
     '3': '6900',
