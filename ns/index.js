@@ -1,10 +1,9 @@
-console.log('native show');
-console.log(document.referrer);
-
-/*let ns = localStorage.getItem('nativeShow');
-if(!ns) {
+if(!localStorage.getItem('nativeShow')) {
+  console.log('setitem')
   localStorage.setItem('nativeShow', true);
-};*/
+} else {
+  console.log('is');
+};
 
 const csvPrices = {
     '1': '3900',
