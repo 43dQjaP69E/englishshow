@@ -1,8 +1,5 @@
 if(!localStorage.getItem('nativeShow')) {
-  console.log('setitem')
   localStorage.setItem('nativeShow', true);
-} else {
-  console.log('is');
 };
 
 const csvPrices = {
