@@ -1,4 +1,6 @@
+console.log('native show');
 console.log(document.referrer);
+
 /*let ns = localStorage.getItem('nativeShow');
 if(!ns) {
   localStorage.setItem('nativeShow', true);
