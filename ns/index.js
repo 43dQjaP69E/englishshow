@@ -1,7 +1,8 @@
-let ns = localStorage.getItem('nativeShow');
+console.log(document.referrer);
+/*let ns = localStorage.getItem('nativeShow');
 if(!ns) {
   localStorage.setItem('nativeShow', true);
-};
+};*/
 
 const csvPrices = {
     '1': '3900',
