@@ -35,19 +35,9 @@ if (items.length > 0) {
     };
 };
 
-const placeholder = {
-    name: 'имя',
-    email: 'email',
-    phone: 'телефон'
-};
-
-const $n = document.getElementsByName('formParams[full_name]')[0];
-const $e = document.getElementsByName('formParams[email]')[0];
-const $p = document.getElementsByName('formParams[phone]')[0];
-
-$n.placeholder = `${placeholder.name}`;
-$e.placeholder = `${placeholder.email}`;
-$p.placeholder = `${placeholder.phone}`;
+document.getElementsByName('formParams[full_name]')[0].placeholder = 'Имя';
+document.getElementsByName('formParams[email]')[0].placeholder = 'Email';
+document.getElementsByName('formParams[phone]')[0].placeholder = 'Телефон';
 
 $payButton = document.querySelector('.f-btn');
 $payButton.innerText = 'оплатить';
