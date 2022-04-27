@@ -38,6 +38,5 @@ if (items.length > 0) {
 document.getElementsByName('formParams[full_name]')[0].placeholder = 'Имя';
 document.getElementsByName('formParams[email]')[0].placeholder = 'Email';
 document.getElementsByName('formParams[phone]')[0].placeholder = 'Телефон';
-
-$payButton = document.querySelector('.f-btn');
-$payButton.innerText = 'оплатить';
+const $btn = document.querySelector('.form-content .builder .f-btn');
+$btn.innerText = 'Оплатить';
