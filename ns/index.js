@@ -66,7 +66,7 @@ if (csv || ssp) {
     };
 } else {
 	
-	if (url.match(/chatsovsemi-\d+/)) {
+	if (url.match(/navsegda/)) {
 		$btn.insertAdjacentHTML('beforebegin', `<div class='prod__price'>К оплате: 14900 &#x20bd;</div>`);
 		document.title = 'Native Show / #навсегда';
 		$prod.innerHTML = `
