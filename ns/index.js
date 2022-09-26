@@ -1,6 +1,6 @@
 /*if(!localStorage.getItem('nativeShow')) {
   localStorage.setItem('nativeShow', true);
-};
+};*/
 
 const csvPrices = {
     '1': '3900',
@@ -109,4 +109,4 @@ $e.placeholder = `${placeholder.email}`;
 $p.placeholder = `${placeholder.phone}`;
 
 $payButton = document.querySelector('.f-btn');
-$payButton.innerText = 'Оплатить';*/
+$payButton.innerText = 'Оплатить';
