@@ -1,4 +1,4 @@
-if(!localStorage.getItem('nativeShow')) {
+/*if(!localStorage.getItem('nativeShow')) {
   localStorage.setItem('nativeShow', true);
 };
 
@@ -65,14 +65,22 @@ if (csv || ssp) {
 	$btn.insertAdjacentHTML('beforebegin', `<div class='prod__price'>К оплате: ${sspPrices[num]} &#x20bd;</div>`);
     };
 } else {
-	$btn.insertAdjacentHTML('beforebegin', `<div class='prod__price'>К оплате: 14900 &#x20bd;</div>`);
 	
-	document.title = 'Native Show / #навсегда';
-	$prod.innerHTML = `
-            <p class="prod__title">Native Show</p>
-            <p class="prod__type">#навсегда</p>
-	`;
-        //$prodprice.innerHTML = `К оплате: 9 990&#x20bd;`;
+	if (url.match(/chatsovsemi-\d+/)) {
+		$btn.insertAdjacentHTML('beforebegin', `<div class='prod__price'>К оплате: 14900 &#x20bd;</div>`);
+		document.title = 'Native Show / #навсегда';
+		$prod.innerHTML = `
+		    <p class="prod__title">Native Show</p>
+		    <p class="prod__type">#навсегда</p>
+		`;
+	} else {
+		$btn.insertAdjacentHTML('beforebegin', `<div class='prod__price'>К оплате: 990 &#x20bd;</div>`);
+		document.title = 'Native Show / #нанеделю';
+		$prod.innerHTML = `
+		    <p class="prod__title">Native Show</p>
+		    <p class="prod__type">#нанеделю</p>
+		`;
+	}
 };
 
 function getSalePrice(price, sale) {
@@ -101,4 +109,4 @@ $e.placeholder = `${placeholder.email}`;
 $p.placeholder = `${placeholder.phone}`;
 
 $payButton = document.querySelector('.f-btn');
-$payButton.innerText = 'Оплатить';
+$payButton.innerText = 'Оплатить';*/
