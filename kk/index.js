@@ -1,4 +1,4 @@
-/*const kk27 = {
+const kk27 = {
     '5': '3 750',
     '10': '5 750',
     '15': '8 250',
@@ -50,4 +50,4 @@ $e.placeholder = `${placeholder.email}`;
 $p.placeholder = `${placeholder.phone}`;
 
 $payButton = document.querySelector('.f-btn');
-$payButton.innerText = 'оплатить';*/
+$payButton.innerText = 'оплатить';
